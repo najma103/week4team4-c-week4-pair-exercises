@@ -16,10 +16,11 @@ namespace Vend.Classes
         public void VendMethod()
         {
             Console.WriteLine($"**************** VENDO-MATIC 500 ****************");
-            Console.WriteLine($"\n********* PLEASE MAKE A SELECTION *********\n\n");
+
 
             while (true)
             {
+                Console.WriteLine($"\n********* PLEASE MAKE A SELECTION *********\n\n");
                 Console.WriteLine($"Current Balance: ${balance.ToString("F")} \n");
                 Console.WriteLine("1) Feed Money");
                 Console.WriteLine("2) Purchase Items");

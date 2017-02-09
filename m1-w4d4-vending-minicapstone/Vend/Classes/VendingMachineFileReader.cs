@@ -9,9 +9,11 @@ namespace Vend.Classes
 {
     public class VendingMachineFileReader
     {
-        private Dictionary<string, VendingMachineItems> items = new
+        Dictionary<string, VendingMachineItems> items = new
                 Dictionary<string, VendingMachineItems>();
-        private string filePath = @"C:\Users\naden\week4team4-c-week4-pair-exercises\m1-w4d4-vending-minicapstone\vendingmachine.csv";
+        static string fileDir = Environment.CurrentDirectory;
+        static string fileName = @"vendingmachine.csv";
+        string filePath = Path.Combine(fileDir, fileName);
         public VendingMachineFileReader()
         {
             //VendingMachineItems vmi = new VendingMachineItems();
