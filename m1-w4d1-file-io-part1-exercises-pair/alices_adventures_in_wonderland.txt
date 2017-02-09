@@ -1,4 +1,4 @@
-Project Gutenberg's Alice's Adventures in Wonderland, by Lewis Carroll
+﻿Project Gutenberg's Alice's Adventures in Wonderland, by Lewis Carroll
 
 This eBook is for the use of anyone anywhere at no cost and with
 almost no restrictions whatsoever.  You may copy it, give it away or
@@ -363,7 +363,7 @@ taste it, and finding it very nice (it had, in fact, a sort of mixed
 flavour of cherry-tart, custard, pineapple, roast turkey, coffee, and
 hot buttered toast,) she very soon finished it off.
 
-       *       *       *       *       *
+
 
 "What a curious feeling!" said Alice. "I must be shutting up like a
 telescope."
@@ -414,7 +414,7 @@ for life to go on in the common way.
 
 So she set to work, and very soon finished off the cake.
 
-       *       *       *       *       *
+
 
 
 
@@ -3645,7 +3645,7 @@ THE END
                            TAVISTOCK STREET
                                  LONDON
 
-       *       *       *       *       *
+
 
 Transcriber's Notes:
 

@@ -10,25 +10,22 @@ namespace WordCount
 { }
     public class Program
     {
-        static void Main(string[] args)
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Please enter the filepath ?");
+        string filePath = Console.ReadLine();
+
+        string filename = @"alices_adventures_in_wonderland.txt";
+
+        string fullPath = Path.Combine(filePath, filename);
+
+        bool directoryExists = Directory.Exists(filePath);
+
+        if (directoryExists)
         {
-            Console.WriteLine("Please enter the filepath ?");
-            string filePath = Console.ReadLine();
-            //filePath = "@" + filePath;
-            //filePath = @"C:\WordSearch";
-            string filename = @"alices_adventures_in_wonderland.txt";
-
-            // Generating a full path from a folder and a file name
-            string fullPath = Path.Combine(filePath, filename);
-
-            bool directoryExists = Directory.Exists(filePath);
-
-            if (directoryExists)
-            {
-                ReadAndProcessWord.ReadACharacterFile(fullPath);
-                ReadAndProcessWord.printTotalCount();
-            }
-
-
+            ReadAndProcessWord.ReadACharacterFile(fullPath);
+            ReadAndProcessWord.printTotalCount();
         }
+    }    
+}
     

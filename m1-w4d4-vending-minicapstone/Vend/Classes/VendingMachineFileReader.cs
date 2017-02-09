@@ -3,15 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Vend;
 
-namespace Vend
+namespace Vend.Classes
 {
-    public class Program
+    class VendingMachineFileReader
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
