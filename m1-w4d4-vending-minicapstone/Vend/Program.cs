@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Vend;
+using Vend.Classes;
 
 namespace Vend
 {
@@ -12,6 +12,8 @@ namespace Vend
         static void Main(string[] args)
         {
 
+            VendMachine vending = new VendMachine();
+            vending.VendMethod();
         }
     }
 }
