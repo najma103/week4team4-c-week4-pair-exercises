@@ -9,16 +9,17 @@ namespace Vend.Classes
 {
     public class VendingMachineFileReader
     {
+        private Dictionary<string, VendingMachineItems> items = new
+                Dictionary<string, VendingMachineItems>();
         private string filePath = @"C:\Users\naden\week4team4-c-week4-pair-exercises\m1-w4d4-vending-minicapstone\vendingmachine.csv";
         public VendingMachineFileReader()
         {
-            VendingMachineItems vmi = new VendingMachineItems();
-            Dictionary<string, VendingMachineItems> items = new 
-                Dictionary<string, VendingMachineItems>(readAndLoadFile(filePath));
-          
+            //VendingMachineItems vmi = new VendingMachineItems();
+            items = readAndLoadFile(filePath, items);
+           
         }
 
-        public Dictionary<string,VendingMachineItems> readAndLoadFile(string filePath)
+        public Dictionary<string,VendingMachineItems> readAndLoadFile(string filePath, Dictionary<string,VendingMachineItems> items)
         {
             bool srcExists = File.Exists(filePath);
             if (srcExists)
@@ -33,9 +34,12 @@ namespace Vend.Classes
                         {
                             // Read in a single line
                             string[] line = sr.ReadLine().Split('|');
-
-                            // Add each line of the file to allLines collection
-                            allLines.Add(line);
+                            VendingMachineItems item = new VendingMachineItems();
+                            string itemKey = line[0];
+                            item.Name = line[1];
+                            item.Price = Double.Parse(line[2]);
+                            item.Quantity = 5;
+                            items[itemKey] = item;
 
                         } //go to the next line until the end is reached
                     }
@@ -51,7 +55,7 @@ namespace Vend.Classes
                 Console.WriteLine("Error invalid FilePath given ");
                 Console.ReadKey();
             }
-            return allLines;
+            return items;
 
         }
     }
