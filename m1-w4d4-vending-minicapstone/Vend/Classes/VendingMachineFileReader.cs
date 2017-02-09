@@ -59,6 +59,7 @@ namespace Vend.Classes
             }
             return items;
 
-        }
-    }
+
+      }
+  }
 }
