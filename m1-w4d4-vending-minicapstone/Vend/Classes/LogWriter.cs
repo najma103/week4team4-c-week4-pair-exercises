@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vend.Classes
 {
-    class LogWriter
+    public class LogWriter
     {
     }
 }
