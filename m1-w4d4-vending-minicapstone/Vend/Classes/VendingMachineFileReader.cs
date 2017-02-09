@@ -11,15 +11,12 @@ namespace Vend.Classes
     {
         Dictionary<string, VendingMachineItems> items = new
                 Dictionary<string, VendingMachineItems>();
-<<<<<<< HEAD
+
         static string fileDir = Environment.CurrentDirectory;
         static string fileName = @"vendingmachine.csv";
         string filePath = Path.Combine(fileDir, fileName);
-=======
-        private static string fileDir = Environment.CurrentDirectory;
-        private static string filename = @"vendingmachine.csv";
-        private string filePath = Path.Combine(fileDir, filename);
->>>>>>> d3f8636821dc62120280a73a9e6e63c0ad8d429e
+
+
         public VendingMachineFileReader()
         {
             //VendingMachineItems vmi = new VendingMachineItems();

@@ -13,7 +13,7 @@ namespace Vend
         {
             VendingMachineFileReader reader = new VendingMachineFileReader();
 
-            VendMachine vending = new VendMachine();
+            VendingMachineCLI vending = new VendingMachineCLI();
             vending.VendMethod();
         }
     }
