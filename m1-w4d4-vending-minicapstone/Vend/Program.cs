@@ -11,6 +11,7 @@ namespace Vend
     {
         static void Main(string[] args)
         {
+            VendingMachineFileReader reader = new VendingMachineFileReader();
 
             VendMachine vending = new VendMachine();
             vending.VendMethod();
